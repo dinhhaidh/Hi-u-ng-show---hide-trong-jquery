@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <style type="text/css">
+        #box{
+            width: 400px;
+            padding: 40px;
+            background: #e74c3c;
+            color: #fff;
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // show ra
+            $("#effect-show").click(function(){
+                $("#box").show(1000);
+            });
+            // ẩn đi
+            $("#effect-hide").click(function(){
+                $("#box").hide(1000);
+            });
+            $("#effect-toggle").click(function(){
+                $("#box").toggle(1000);
+            });
+        });
+
+    </script>
+    <h1>Hiệu ứng show - hide trong jquery </h1>
+    <a href="#" id="effect-show">Show</a>
+    <a href="#" id="effect-hide">Hide</a>
+    <a href="#" id="effect-toggle">Toggle</a>
+    <div id="box">
+        Box
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse tenetur ad sunt mollitia ex maiores aspernatur dolorum dignissimos nobis suscipit accusamus porro culpa veniam nam, a voluptate tempore ullam perspiciatis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse tenetur ad sunt mollitia ex maiores aspernatur dolorum dignissimos nobis suscipit accusamus porro culpa veniam nam, a voluptate tempore ullam perspiciatis.</p>
+</body>
+</html>
